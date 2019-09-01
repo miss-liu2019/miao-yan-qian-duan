@@ -1,0 +1,7 @@
+.slider-list{
+    width:100%;
+}
+.slider-list .slider-slide{
+    width:2rem;
+    height:2rem;
+}

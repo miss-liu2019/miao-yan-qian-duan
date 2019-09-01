@@ -1,0 +1,142 @@
+*{margin:0;padding:0}
+li{list-style: none}
+/* 搜索框 */
+.search-wrapper .search-header{
+    display: flex;
+    text-align: center;
+    line-height: 60px;
+    padding:16px 0 16px 20px;
+    border-bottom:1px solid #ddd;
+}
+.search-wrapper .search-header .input-wrapper{
+    height:60px;
+    width:626px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    line-height: 60px;
+    padding:0 20px;
+}
+.search-wrapper .search-header .input-wrapper .search-icon{
+    width:30px;
+    height:30px;
+    margin-right:12px;
+}
+/* .search-wrapper .search-header .input-wrapper .search-icon-2{
+    margin-right:0;
+    display: none;
+} */
+.search-wrapper .search-header .input-wrapper .search-input{
+    width:460px;
+    height:56px;
+    padding:4px 0;
+    border:none;
+    font-size:26px
+}
+.search-wrapper .search-header .search-search{
+    width:88px;
+    line-height:60px;
+    font-size:30px;
+    color:#1fa5c4;
+}
+.search-wrapper .search-header .cancel{
+    width:88px;
+    line-height:60px;
+    font-size:30px;
+    color:#1fa5c4;
+}
+/* 搜索内容 */
+.search-result{
+    /* display: none; */
+    background-color:#fff;
+}
+.search-result .result-wrapper .result h3{
+    height:76px;
+    font-size:30px;
+    font-weight: 400;
+    color:rgba(153,153,153);
+    /* line-height: 76px; */
+    padding:18px 30px;
+    /* background-color:#fff; */
+    border-bottom:1px solid #ccc;
+}
+.search-result .result-wrapper .result .list{
+    padding-left:30px;
+}
+.search-result .result-wrapper .result .list .movie{
+    padding:24px 0;
+    display: flex;
+    border-bottom:1px solid #ccc;
+}
+.search-result .result-wrapper .result .list .movie .poster{
+    width:128px;
+    height:180px;
+    margin-right:20px;
+}
+.search-result .result-wrapper .result .list .movie .info{
+    margin-right:30px;
+}
+.search-result .result-wrapper .result .list .movie .info .name-score{
+    display: flex;
+    height:45px;
+    line-height: 45px;
+}
+.search-result .result-wrapper .result .list .movie .info .name-score .name{
+    width:380px;
+    font-weight: 700;
+    font-size:34px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.search-result .result-wrapper .result .list .movie .info .name-score .score{
+    font-size:26px;
+    color:#fa0;
+    padding-left:10px;
+}
+.search-result .result-wrapper .result .list .movie .info .name-score .score .num{
+    font-size:34px;
+}
+.search-result .result-wrapper .result .list .movie .info .detail-section{
+    display: flex;
+}
+.search-result .result-wrapper .result .list .movie .info .detail-section .detail-items{
+    width:400px;
+    height:113px;
+    padding-right:20px;
+}
+.search-result .result-wrapper .result .list .movie .info .detail-section .detail-items p{
+    width:380px;
+    height:34px;
+    line-height: 34px;
+    font-size:26px;
+    color:#666;
+    margin-top:4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.search-result .result-wrapper .result .list .movie .info .detail-section .buy-btn{
+    width:96px;
+    height:54px;
+    font-size:24px;
+    color:#fff;
+    background-color:#1fa5c4;
+    text-align: center;
+    line-height: 54px;
+    border-radius: 8px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    margin-left: 40px;
+    
+}
+.search-result .result-wrapper .more-result{
+    height:88px;
+    font-size:30px;
+    color:#ef4238;
+    text-align: center;
+    line-height: 88px;
+}

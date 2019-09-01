@@ -1,0 +1,13 @@
+.container{
+    width: 98%;
+    height: 100%;
+    padding: 12px 0 12px 15px;
+    margin:0 ;
+    background: #fff;
+}
+.p1{
+    font-size:.4rem;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    /* background: #fff; */
+}

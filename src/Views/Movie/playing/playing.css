@@ -1,0 +1,100 @@
+.hotMovie-ul .hot-li{
+    font-weight: 700;
+    /* margin: 0 12px; */
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    /* width: 21.333333vw; */
+    width: 100%;
+    overflow: hidden;
+    /* background: #1fa5c4; */
+   /*  border-bottom: 1px solid #666666; */  
+}
+ul,li{
+    margin: 0px;
+    padding: 0px;
+}
+.pic{
+    float: left;
+    width: 120px;
+}
+.hot-li:hover{
+    color: #1fa5c4
+}
+.hot-li{
+    font-size: 15px;
+    width: 100%;
+    font-weight: 700;
+    /* height: 200px; */
+    /* position: relative; */
+    color: #666666;    
+    margin-bottom: 10px;
+}
+
+.right{
+    position: relative;
+    flex: 1;
+    padding:10px; 
+    padding-top: 20px;
+    height: 180px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.right span:nth-of-type(1){
+    font-size: 30px;
+    color: #333;
+    font-weight: 700;
+    padding-right: 5px;
+    flex-shrink: 1;
+    display: block;
+    margin-bottom: 20px;
+}
+.right span:nth-of-type(4){
+    text-overflow: ellipsis;
+}
+.right span:nth-of-type(2){
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+}
+.right span:nth-of-type(3){
+    font-size: 25px;
+    color: rgba(230, 135, 27, 0.836);
+    margin-bottom: 20px;
+}
+.right span:nth-of-type(4){
+    display: block;
+    margin-bottom: 20px;
+    font-size:25px;
+    color: #333;
+}
+.right span:nth-of-type(5){
+    display: block;
+    margin-bottom: 20px;
+    font-size:25px;
+    color: #333;
+}
+
+.right span{
+    font-size: 13px;
+    display: block;
+    font-weight: 500;
+    line-height: 18px;
+    color: #666666;
+}
+
+.shop{
+    text-align: center;
+    width: 85px;
+    font-size: 20px;
+    line-height: 42px;
+    /* line-height: 50px; */
+    background-color: #1fa5c4;
+    border-radius: 10px;
+    bottom: 100px;
+    color: white;
+    position: absolute;
+    right:40px;
+
+}
+
+

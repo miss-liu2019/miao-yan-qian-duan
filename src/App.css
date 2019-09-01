@@ -1,0 +1,24 @@
+/* 优化了用户中心以及接口和数据库优化 */
+.App{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.am-tab-bar{
+  height: auto;
+}
+.tab-bar{
+  flex: 1;
+}
+.am-tabs-content-wrap{
+}
+#root{
+  height: 100%;
+}
+html,body{
+  height: 100%;
+}
+body,html,h1,h2,h3,h4,p,ul,li,ol{
+  margin: 0px;
+  padding: 0px;
+}

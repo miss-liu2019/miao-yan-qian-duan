@@ -1,0 +1,367 @@
+
+/* 正在热映 上面的大图减少公用样式 */
+
+.box{
+    height: 340px;
+    width: 100%;
+    background: #333; 
+    opacity: .8  ;
+}
+.box1{
+    width:20px;
+    height:60px;
+    background: #fc0;
+    float: left;
+}
+
+.box_title{
+    width: 650px;
+    height:280px;
+    border:1px solid #333;
+    margin-top:30px;
+    float: left;
+} 
+
+/* 图片 */
+.pic1{
+    margin-top:10px;
+
+    /* background: red; */
+    /* z-index: 1; */
+    float: left;
+}
+.pic1 img{
+    width: 190px ;
+    height:260px;
+}
+/* 右边内容盒子 */
+.title_box{
+    width:430px;
+    height: 280px;
+    border:1px solid #333;
+    float: right;
+    padding-left: 10px;
+}
+.title_box div:nth-of-type(1){
+    font-size:35px;
+    color:#fff;
+    font-weight: 700;
+    overflow: hidden;
+    margin-top:10px;
+}
+.title_box div:nth-of-type(2){
+    font-size:10px;
+    color:#fff;
+    overflow: hidden;
+    margin-top:10px;
+    margin-bottom:10px;
+    opacity: .8
+}
+.title_box div:nth-of-type(3) span:nth-of-type(1){
+    font-size:30px;
+    color:#fc0;
+    font-weight: 800;
+    overflow: hidden;
+    margin-top:10px;
+}
+.title_box div:nth-of-type(3) span:nth-of-type(2){
+    font-size:20px;
+    color:#fff;
+    opacity: .8;
+    margin-left: 10px;
+}
+.title_box div:nth-of-type(4){
+    font-size:10px;
+    color:#fff;
+    overflow: hidden;
+    margin-top:20px;
+    margin-bottom:10px;
+    opacity: .8
+}
+.title_box div:nth-of-type(5){
+    font-size:10px;
+    color:#fff;
+    overflow: hidden;
+    margin-top:20px;
+    margin-bottom:10px;
+    opacity: .8
+}
+.title_box div:nth-of-type(6){
+    font-size:10px;
+    color:#fff;
+    overflow: hidden;
+    margin-top:20px;
+    margin-bottom:10px;
+    opacity: .8
+}
+
+.jiantou{
+    /* text-align: center; */
+    height: 280px;
+    width: 65px;
+    float: right;
+    /* background: palegreen; */
+    margin-top:30px;
+    position: relative;
+    z-index:999
+}
+.jiantou .img{
+    display: block;
+    width:30px!important;
+    height: 40px;
+    /* border:1px solid red; */
+    text-align: center;
+    margin-top:110px;
+    margin-left: 20px;
+    position: fixed;
+    z-index: 99999999999;
+}
+
+
+
+
+
+/* 路由详情页面的影片介绍的样式 */
+.yp_box{
+    width:700px;
+    height: 240px;
+    /* border:1px solid red; */
+    margin: 0 auto;
+    margin-top:10px;
+    margin-bottom:15px;
+    border-bottom: 1px solid #ccc;
+    /* background:#5555; */
+}
+.yp_title{
+    width: 700px;
+    height: 60px;
+    line-height: 60px;
+    background: #E54847;
+    text-align: center;
+    color: #fff;
+    font-size:30px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.yp_conter{
+    width: 700px;
+    height: 170px;
+    margin-top:10px;
+    font-size: 28px;
+    line-height: 42px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 演员照片轮播图 */
+.photo_box{
+    margin:auto;
+    width: 700px;
+    height: 220px;
+    /* background: palegreen; */
+    border-bottom: 1px solid #ccc;
+}
+
+.moviename-stages {
+    /* height: 240px; */
+    width: auto;
+    overflow: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.moviename-stages .otherImg{
+    width: 180px;
+    height: 140px;
+    margin-right: 10px;
+}
+.moviename-stages .otherImg>img{
+    width: 180px;
+    height: 140px;
+}
+.moviename-stages .moviename-vieoImg{
+    width: 220px;
+    height: 140px;
+    margin-right: 10px;
+}
+.moviename-stages .moviename-vieoImg>img{
+    width: 220px;
+    height: 140px;
+}
+
+.ship{
+    width: 340px;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    /* background: #E54847; */
+    font-size: 28px;
+    color:#666;
+}
+.ship span:nth-of-type(2){
+    margin-left:150px; 
+}
+.juz{
+    width: 340px;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    font-size: 28px;
+    color:#666;
+}
+.juz span:nth-of-type(2){
+    margin-left:150px; 
+}
+
+
+/* 媒体库视频播放 */
+.movie_box{
+    width: 100%;
+    /* height: 600px; */
+    margin-top:10px;
+    /* background: #fc0; */
+}
+.movie_box1{
+    width:710px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    margin-bottom: 8px;
+    /* background: #ccc; */
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+}
+.movie_video{
+    width: 710px;
+    height: 100%;
+    /* border:1px solid #E54847; */
+    margin: auto
+}
+.movie_video video{
+    width: 100%;
+    /* height: 100%; */
+    /* margin: auto */
+}
+
+/* 资讯 */
+.zixun{
+    width: 700px;
+    height: 120px;
+    /* background: pink; */
+    margin:auto;
+    margin-top:15px;
+    margin-bottom:20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.zixun h3{
+    float: left;
+    font-size: 40px;
+    color: #E54847;
+    /* height: 110px; */
+    text-align: center;
+    /* line-height: 110px; */
+    margin-left: 65px;
+    margin-top:15px;
+}
+.zixun h3 h2{
+    font-size:20px;
+    color:#999; 
+    margin-top:20px;
+}
+.zixun h4{
+    width: 50px;
+    height: 120px;
+    /* background: #333; */
+    float: right;
+    text-align: center;
+    line-height: 120px;
+}
+
+/* 相关电影 */
+.photo_box1{
+    margin:auto;
+    width: 700px;
+    height: 350px;
+    /* background: palegreen; */
+    border-bottom: 1px solid #ccc;
+}
+
+.photo_box_title{
+    width: 700px;
+    height: 60px;
+    line-height: 60px;
+    /* text-align: center; */
+    font-size: 30px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.moviename-stages1{
+    width: auto;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.photo_box1 .otherImg1 img{
+    margin-left: 10px;
+    width: 150px;
+    height:200px ;
+}
+.photo_box1 .otherImg1 h4{
+    margin-top:10px;
+    text-align: center;
+    color: #555
+}
+
+
+/* 底部 */
+.footer{
+    width:700px;
+    height: 240px;
+    /* border:1px solid red; */
+    margin: 0 auto;
+    margin-top:20px;
+    /* margin-bottom:15px; */
+    border-bottom: 1px solid #ccc;
+}
+.footer_title{
+    width: 700px;
+    height: 60px;
+    line-height: 60px;
+    background: #E54847;
+    text-align: center;
+    color: #fff;
+    font-size:30px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.footer h3:nth-of-type(1){
+    margin-top:10px;
+    font-size: 28px;
+    text-align: center;
+}
+.footer h3:nth-of-type(1)>span{
+    color:#df3434;  
+}
+.footer h3:nth-of-type(2){
+    margin-top:30px;
+    text-align: center;
+    font-size:20px;
+    color: #9e9e9e;
+}
+.footer h3:nth-of-type(3){
+    margin-top:30px;
+    text-align: center;
+    font-size:20px;
+    color: #9e9e9e;
+}
+
