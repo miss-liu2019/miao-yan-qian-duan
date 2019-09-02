@@ -2,7 +2,20 @@
     font-size: 1px;
 }
 .pay_code img{
-    width: 70%;
-    margin: 30px auto;
+    width: 80%;
+    display: block;
+    margin: 90px auto;
+
+}
+.return-box{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    cursor: pointer;
+}
+.return-admin{
+    display: block;
+    line-height: 65px;
+    font-size: 32px;
 
 }
