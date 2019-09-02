@@ -17,6 +17,7 @@ ul,li{
 .pic{
     float: left;
     width: 120px;
+    height: 180px;
 }
 .hot-li:hover{
     color: #1fa5c4
