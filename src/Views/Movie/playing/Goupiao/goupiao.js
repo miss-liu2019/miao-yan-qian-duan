@@ -1,6 +1,6 @@
 import React from 'react'
 import "./goupiao.css"
-import Cinema from '../../../Cinema/cinema'
+import Cinema from '../../../Cinema/cinemaList'
 import { withRouter } from 'react-router-dom'
 import { getMovie } from '../../../../api'
 
@@ -10,7 +10,8 @@ class Goupiao extends React.Component {
         super()
         this.state = {
             id: '',
-            data: {}
+            data: {},
+            setTitle:null
         }
     }
     componentWillMount() {
@@ -31,9 +32,11 @@ class Goupiao extends React.Component {
         if (!this.props.location.query) {
             this.props.history.push('/movie/hot')
         }else{
+            let setTitle = this.props.location.query.setTitle
             const ID = this.props.location.query.id
             this.setState({
-                    id: ID
+                    id: ID,
+                    setTitle,
                 })
             getMovie({ movieId: ID }).then(res => {
                 // console.log(res.data)
@@ -46,7 +49,6 @@ class Goupiao extends React.Component {
 
 
     }
-
     getxiangqing() {
         // ID = this.state.id
         var path = {
@@ -58,6 +60,14 @@ class Goupiao extends React.Component {
     }
     huituo() {
         this.props.history.push('/movie/hot')
+    }
+    setTitle = () => {
+        if(this.props.location.query){
+            let setTitle = this.props.location.query.setTitle
+            return <Cinema setTitle = { setTitle } />
+        }else{
+            this.props.history.push('/movie/hot')
+        }
     }
 
 
@@ -94,7 +104,7 @@ class Goupiao extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <Cinema />
+                    {this.setTitle()}
                 </div>
 
             </div>

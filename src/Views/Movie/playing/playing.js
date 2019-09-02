@@ -1,47 +1,54 @@
 import React, { Component } from 'react'
-import { NavLink as Link, Switch, Route ,Redirect} from 'react-router-dom'
+import { NavLink as Link, Switch, Route, Redirect } from 'react-router-dom'
 import "./playing.css"
 import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
-import {getItem} from "../../../api"  //引入 api 接口
-import {withRouter} from 'react-router-dom'
+import { getItem } from "../../../api"  //引入 api 接口
+import { withRouter } from 'react-router-dom'
 
 @withRouter
- class Playing extends Component {
-    constructor(){
+class Playing extends Component {
+    constructor() {
         super()
         this.state = {
-            data:[],
-            id:'',
+            data: [],
+            id: '',
         }
     }
 
-    handle(e){
-        let setTitle = this.props.setTitle
-        this.setState({
-            id:e.id
-        })
-        var path = {
-            pathname: '/goupiao',
-            query:{id: e.id,setTitle }
+    handle(val, e) {
+        // console.log(e.target.className)
+        if (e.target.className == 'shop') {
+            this.props.history.push({
+                pathname :'/pay',
+                state : this.props.setTitle
+            })
+        } else {
+
+            let setTitle = this.props.setTitle
+            this.setState({
+                id: val.id
+            })
+            var path = {
+                pathname: '/goupiao',
+                query: { id: val.id, setTitle }
+            }
+            // console.log(this.props.history)
+            // console.log(this.state.id)
+            this.props.history.push(path)
+            // console.log(this.state.id)
         }
-        console.log(this.props.history)
-        // console.log(this.state.id)
-        this.props.history.push(path)
-        // console.log(this.state.id)
-        
+
     }
-    componentDidMount(){
+    componentDidMount() {
         // 调用api的数据 改变state
-        getItem().then(res=>{
+        getItem().then(res => {
             // console.log(res.data.data)
             this.setState({
-                data:res.data.data.movieList
+                data: res.data.data.movieList
             })
         })
     }
     render() {
-        // console.log(this.state.id)
-        // console.log(this.state.data.data)
         return (
             <div>
                 <ul className="hotMovie-ul">
@@ -55,7 +62,7 @@ import {withRouter} from 'react-router-dom'
                                 {/* <span>观众评{item.wish}</span> */}
                                 <span>{item.star}</span>
                                 <span>{item.showInfo}</span>
-                                <div className='shop'>购票</div>
+                                <div className='shop' >购票</div>
                             </div>
                         </li>
                     ))}

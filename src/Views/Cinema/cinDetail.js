@@ -70,13 +70,6 @@ class CinDetail extends Component {
                     moviesPlist:res.data.showData.movies[0].shows[0].plist,
                     vipInfo:res.data.showData.vipInfo[0],
                     imgList:res.data.showData.movies
-                }, () => {
-                    // console.log(this.state.cinemaData)
-                    // console.log(this.state.moviesList)
-                    // console.log(this.state.moviesShows)
-                    // console.log(this.state.vipInfo)
-                    console.log(this.state.moviesPlist[0])
-                    console.log(this.state.moviesList.dur) // 134
                 })
             })
         }
@@ -89,6 +82,14 @@ class CinDetail extends Component {
     //     let time2 = during + time ;
     //     return time2;
     // }
+    getSwiper = () => {
+        if(this.props.location.state){
+            let ID = this.props.location.state.id
+            return <Swiper id = {ID} />
+        }else{
+            this.props.history.push('/cinema')
+        }
+    }
     render() {
         return (
             <div className="cinContainer">
@@ -109,7 +110,7 @@ class CinDetail extends Component {
                     </div>
                     {/* 轮播图插件*/}
                     <div className="dail-banner" onClick={this.handle.bind(this)}>
-                        <Swiper id = {this.props.location.state.id} />
+                        {this.getSwiper()}
                     </div>
 
                     <div class="movie_title">
@@ -160,7 +161,6 @@ class CinDetail extends Component {
 }
     // 这步操作是获取当前地理位置，主机在哪里就可以获取当前的地理位置
     const getState = state => {
-        console.log(state)
         return {
             locationMsg: state.Location
         }

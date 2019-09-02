@@ -35,17 +35,22 @@ class CinemaList extends Component {
         this.props.history.push({ pathname: "/cinDetail", state: { ...item, setTitle } })
     }
     componentDidMount() {
-        console.log(this.props)
-        this.props.setTitle('影院')
-        getItem1(this.props.locationMsg.id).then(res => { // 55是南京的id，this.props.locationMsg.id城市的id.
-            console.log(res.data)
-            this.setState({
-                data: res.data.data.cinemas
-            }, () => {
-                // console.log(this.state.data)
-            })
+        if(!this.props.setTitle){
+            this.props.history.push('/movie/hot')
+        }else{
 
-        })
+            // console.log(this.props)
+            this.props.setTitle('影院')
+            getItem1(this.props.locationMsg.id).then(res => { // 55是南京的id，this.props.locationMsg.id城市的id.
+                // console.log(res.data)
+                this.setState({
+                    data: res.data.data.cinemas
+                }, () => {
+                    // console.log(this.state.data)
+                })
+    
+            })
+        }
     }
 
     render() {
@@ -95,7 +100,7 @@ class CinemaList extends Component {
 }
 // 这步操作是获取地理位置，在哪里就可以获取当前的地理位置
 const getState = state => {
-    console.log(state)
+    // console.log(state)
     return {
         locationMsg: state.Location
     }
