@@ -1,3 +1,4 @@
+// 加载中的动画效果
 import actionType from '../Action/actionType'
 const initState = {
     isLocaiton:true

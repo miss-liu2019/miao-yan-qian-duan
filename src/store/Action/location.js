@@ -1,3 +1,4 @@
+// 城市定位
 import actionType from './actionType'
 import axios from 'axios'
 export const getLocation = () => dispatch => {

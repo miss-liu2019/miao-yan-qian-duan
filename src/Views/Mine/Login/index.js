@@ -25,6 +25,7 @@ class Login extends Component {
             }
             else {
                 this.loadingToast('用户名或密码错误！')
+                // loadingToast是一个插件，实现加载动画效果
                 setTimeout(()=>{
                     this.props.history.push('/mine/login')
                 },1000)
@@ -38,7 +39,7 @@ class Login extends Component {
         })
     }
     loadingToast = (msg) => {
-        Toast.loading(msg, 1, );
+        Toast.loading(msg, 1, );// 1是指加载时间是1秒。
     }
     render() {
         return (
